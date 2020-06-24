@@ -15,8 +15,9 @@ def test():
 
         shouxufei = float(jingzhiNow)*float(buy_num)*float(rate)
         income = (float(jingzhiNow)-float(jingzhiBuy))*float(buy_num)
+        print("卖出手续费为：","%.2f" %shouxufei)
         print("您的收益为：",'%.2f' %(income-shouxufei),"元")
-        print("您的收益率为：",('%.2f' %(('.2f' %income)/int(buy_money)*100)),'%')
+        print("您的收益率为：",'%.2f' %(income/int(buy_money)*100),'%')
         print('=============================')
 
 if __name__ == '__main__':
